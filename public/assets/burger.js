@@ -2,9 +2,8 @@ $(function () {
     $(".createBurger-Form").on("submit", function (event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
-
         var newBurger = {
-            burger_name: $("newBurger").val().trim(),
+            burger_name: $("#newBurger").val().trim(),
             devoured: 0
         };
         $.ajax("/api/burger", {
@@ -19,7 +18,7 @@ $(function () {
         );
     })
 
-    $("#eatBurger").on("click", function (event) {
+    $(".eatBurger").on("click", function (event) {
         event.preventDefault();
         var id = $(this).data("id");
         var devouredStat = {

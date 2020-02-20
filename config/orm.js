@@ -72,7 +72,7 @@ var orm={
           cb(result);
         });
       },
-      delete:function(table,condition,cb){
+      /*delete:function(table,condition,cb){
         var queryString="DELETE FROM"+table+"WHERE"+condition;
         Console.log(queryString);
         connection.query(queryString,function(err,result){
@@ -82,7 +82,7 @@ var orm={
           cb(result);
         })
     
-      }
+      }*/
 }
 
 module.exports=orm;

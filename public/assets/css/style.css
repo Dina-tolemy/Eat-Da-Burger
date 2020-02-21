@@ -10,21 +10,29 @@ body {
   h1{
       text-decoration: orange;
       margin: 50px;
+      font-style: italic;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 900;
   }
 
   #devouerdBurgersList{
       background-color: palegoldenrod;
       margin: 0em;
-      padding: 5px;
+      padding: 15px;
+      font-style: oblique;
   }
   #undevouerdBurgersList{
-
-    margin: 10px;
+    padding: 15px;
+    
+    font-style: oblique;
+    font-size: x-large;
+    margin-left: 0px;
   }
-  #devourButton{
+ #addBurger, #devourButton{
 
     margin-inline-end: 0em;
     background-color: palegoldenrod;
+    color: black;
   }
 
   .formGroup{
